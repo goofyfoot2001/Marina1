@@ -564,6 +564,16 @@ footer.site-footer {
   nav.main-nav.open { display: flex; }
   .nav-toggle { display: block; }
   .nav-cta { margin-top: 6px; }
+
+  /* Surface Marina Map & Reservations near the top of the mobile menu */
+  nav.main-nav a:nth-child(1) { order: 1; }
+  nav.main-nav a:nth-child(2) { order: 4; }
+  nav.main-nav a:nth-child(3) { order: 5; }
+  nav.main-nav a:nth-child(4) { order: 2; }
+  nav.main-nav a:nth-child(5) { order: 6; }
+  nav.main-nav a:nth-child(6) { order: 3; }
+  nav.main-nav a:nth-child(7) { order: 7; }
+  nav.main-nav a:nth-child(8) { order: 8; }
 }
 
 @media (max-width: 720px) {
@@ -571,6 +581,47 @@ footer.site-footer {
   .footer-grid { grid-template-columns: 1fr; }
   .facts .container { grid-template-columns: 1fr 1fr; }
   .hero { padding: 80px 0 70px; }
+}
+
+#bridge { scroll-margin-top: 110px; }
+
+/* Mobile quick-action bar */
+.mobile-action-bar { display: none; }
+@media (max-width: 720px) {
+  body { padding-bottom: 66px; }
+  .mobile-action-bar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 -6px 18px rgba(0,0,0,0.25);
+  }
+  .mobile-action-bar a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 9px 4px 8px;
+    color: #dce6f0;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .mobile-action-bar a svg {
+    width: 19px;
+    height: 19px;
+  }
+  .mobile-action-bar a.primary {
+    background: var(--gold);
+    color: var(--navy-dark);
+  }
 }
 
 @media (max-width: 480px) {
