@@ -170,9 +170,10 @@ nav.main-nav a.active {
   position: relative;
   color: var(--white);
   background:
-    linear-gradient(160deg, rgba(7,24,41,0.88) 10%, rgba(18,58,94,0.72) 55%, rgba(28,93,110,0.65) 100%),
-    repeating-linear-gradient(115deg, rgba(255,255,255,0.05) 0 2px, transparent 2px 40px),
-    linear-gradient(120deg, #0b2540 0%, #123a5e 45%, #1c5d6e 100%);
+    linear-gradient(160deg, rgba(7,24,41,0.88) 10%, rgba(18,58,94,0.72) 55%, rgba(28,93,110,0.55) 100%),
+    url('images/waterview.png');
+  background-size: cover;
+  background-position: center;
   padding: 110px 0 90px;
   overflow: hidden;
 }
