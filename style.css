@@ -173,7 +173,7 @@ nav.main-nav a.active {
     linear-gradient(160deg, rgba(7,24,41,0.88) 10%, rgba(18,58,94,0.72) 55%, rgba(28,93,110,0.55) 100%),
     url('images/waterview.png');
   background-size: cover;
-  background-position: center 75%;
+  background-position: center 87%;
   padding: 110px 0 90px;
   overflow: hidden;
 }
