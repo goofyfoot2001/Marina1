@@ -70,11 +70,13 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
+  max-width: 1320px;
+  padding: 14px 24px;
   gap: 20px;
 }
 .brand {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 12px;
   color: var(--white);
@@ -108,7 +110,7 @@ header.site-header {
 nav.main-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
 nav.main-nav a {
   color: #dce6f0;
@@ -631,7 +633,7 @@ footer.site-footer {
   .boat-icon { display: none; }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
   nav.main-nav {
     position: absolute;
     top: 100%;
@@ -649,16 +651,15 @@ footer.site-footer {
   .nav-toggle { display: block; }
   .nav-cta { margin-top: 6px; }
 
-  /* Surface Marina Map & Reservations near the top of the mobile menu */
+  /* Surface Marina Map right under Home in the mobile menu */
   nav.main-nav a:nth-child(1) { order: 1; }
-  nav.main-nav a:nth-child(2) { order: 4; }
-  nav.main-nav a:nth-child(3) { order: 5; }
+  nav.main-nav a:nth-child(2) { order: 3; }
+  nav.main-nav a:nth-child(3) { order: 4; }
   nav.main-nav a:nth-child(4) { order: 2; }
-  nav.main-nav a:nth-child(5) { order: 6; }
-  nav.main-nav a:nth-child(6) { order: 3; }
+  nav.main-nav a:nth-child(5) { order: 5; }
+  nav.main-nav a:nth-child(6) { order: 6; }
   nav.main-nav a:nth-child(7) { order: 7; }
-  nav.main-nav a:nth-child(8) { order: 9; }
-  nav.main-nav a:nth-child(9) { order: 8; }
+  nav.main-nav a:nth-child(8) { order: 8; }
 }
 
 @media (max-width: 720px) {
@@ -710,7 +711,8 @@ footer.site-footer {
 }
 
 @media (max-width: 480px) {
-  .brand { min-width: 0; }
+  .nav-wrap { padding-left: 10px; padding-right: 10px; gap: 8px; }
+  .brand { min-width: 0; flex-shrink: 1; }
   .brand-text { min-width: 0; overflow: hidden; }
   .brand-text .name {
     font-size: 0.95rem;
